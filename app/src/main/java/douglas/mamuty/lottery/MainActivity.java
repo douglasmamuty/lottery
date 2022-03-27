@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        if (Integer.parseInt(String.valueOf(intStart.getText())) >= Integer.parseInt(String.valueOf(intEnd.getText()))){
+            Toast.makeText(getApplicationContext(), "Start must be less than End and different!",Toast.LENGTH_LONG).show();
+            return;
+        }
+
         TextView results =  findViewById(R.id.results);
         int random = randomWithInterval(Integer.parseInt(String.valueOf(intStart.getText())) ,Integer.parseInt(String.valueOf(intEnd.getText())));
         results.setText(Integer.toString(random));
