@@ -24,7 +24,7 @@
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="112dp"
-        android:hint="Begin"
+        android:hint="Start"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/results"
